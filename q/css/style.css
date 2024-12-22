@@ -1,0 +1,231 @@
+/* إعدادات عامة */
+body {
+   font-family:"IBM Plex Sans Arabic", serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    font-family:"IBM Plex Sans Arabic", serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #F3FCF6;
+    color: #14573A;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    font-family:"IBM Plex Sans Arabic", serif;
+    background-color: #f8f8f8;
+    color: #14573A;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header:hover {
+    background-color: #f0f8f4;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+/*التواصل*/
+
+.faq, .comments-section {
+    font-family:"IBM Plex Sans Arabic", serif;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    font-family:"IBM Plex Sans Arabic", serif;
+    color: #005a34;
+}
+
+.question details {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.question summary {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.comments-section button {
+    font-family:"IBM Plex Sans Arabic", serif;
+    background-color:#1B8354;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* تغيير اتجاه السهم عند فتح المحتوى */
+.accordion-header.active .arrow {
+    transform: rotate(180deg);
+}
+
+
+/* تنسيق الفوتر */
+body {
+    font-family:"IBM Plex Sans Arabic", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer.feedback-footer {
+    background-color: #f8f9fa;
+    border-top: 2px solid #14573A; 
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    flex-wrap: wrap; 
+}
+
+.feedback-container span {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #1B8354;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+button.no {
+    background-color: #1B8354;
+}
+
+button.clicked {
+    background-color: #14573A; 
+}
+
+
+p#stats {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+
+
+
+
+
+/* الهواتف الصغيرة (أقل من 600px) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1rem;
+    }
+
+    .comment-box {
+        padding: 10px;
+    }
+
+    .comment-box button {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* الأجهزة اللوحية (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .comment-box {
+        margin: 10px;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+/* الشاشات الكبيرة (أكبر من 1024px) */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
